@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc ../bin/libhdf5_test_debug.a "CMakeFiles/hdf5_test-static.dir/h5test.c.o" "CMakeFiles/hdf5_test-static.dir/testframe.c.o" "CMakeFiles/hdf5_test-static.dir/cache_common.c.o" "CMakeFiles/hdf5_test-static.dir/external_common.c.o" "CMakeFiles/hdf5_test-static.dir/swmr_common.c.o"
-/Library/Developer/CommandLineTools/usr/bin/ranlib ../bin/libhdf5_test_debug.a
