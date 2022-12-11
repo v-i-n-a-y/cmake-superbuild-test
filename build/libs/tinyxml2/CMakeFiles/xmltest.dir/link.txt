@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/xmltest.dir/xmltest.cpp.o -o ../hdf5/bin/xmltest  -Wl,-rpath,/Users/vinay/Desktop/test2/build/libs/hdf5/bin ../hdf5/bin/libtinyxml2.9.0.0.dylib 

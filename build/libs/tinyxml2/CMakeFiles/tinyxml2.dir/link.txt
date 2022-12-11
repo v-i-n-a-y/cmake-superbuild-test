@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -dynamiclib -Wl,-headerpad_max_install_names -compatibility_version 9.0.0 -current_version 9.0.0 -o ../hdf5/bin/libtinyxml2.9.0.0.dylib -install_name @rpath/libtinyxml2.9.dylib CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o 

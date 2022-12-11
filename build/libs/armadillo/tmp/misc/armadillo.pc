@@ -1,0 +1,9 @@
+libdir=/usr/local/HDF_Group/HDF5/1.12.3/lib
+includedir=/usr/local/HDF_Group/HDF5/1.12.3/include
+
+Name: armadillo
+Description: Fast C++ matrix library with syntax similar to MATLAB and Octave
+URL: http://arma.sourceforge.net
+Version: 11.5.90
+Cflags: -I${includedir}
+Libs: -L${libdir} -larmadillo

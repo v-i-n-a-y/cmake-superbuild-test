@@ -1,0 +1,21 @@
+[submodule "libs/boost"]
+	path = libs/boost
+	url = https://github.com/boostorg/boost.git
+[submodule "libs/wxwidgets"]
+	path = libs/wxwidgets
+	url = https://github.com/wxWidgets/wxWidgets.git
+[submodule "libs/armadillo"]
+	path = libs/armadillo
+	url = https://gitlab.com/conradsnicta/armadillo-code.git
+[submodule "libs/hdf5"]
+	path = libs/hdf5
+	url = https://github.com/HDFGroup/hdf5.git
+[submodule "libs/tinyxml2"]
+	path = libs/tinyxml2
+	url = https://github.com/leethomason/tinyxml2.git
+[submodule "libs/highfive"]
+	path = libs/highfive
+	url = https://github.com/BlueBrain/HighFive.git
+[submodule "libs/wxchartdir"]
+	path = libs/wxchartdir
+	url = https://github.com/utelle/wxchartdir.git

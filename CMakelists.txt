@@ -1,0 +1,29 @@
+cmake_minimum_required(VERSION 3.6)
+project(test_boost)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(Boost_USE_STATIC ON)
+add_subdirectory(libs/boost EXCLUDE_FROM_ALL)
+
+set(wxWidgets_USE_STATIC ON)
+add_subdirectory(libs/wxwidgets EXCLUDE_FROM_ALL)
+add_subdirectory(libs/armadillo EXCLUDE_FROM_ALL)
+
+add_subdirectory(libs/hdf5 EXCLUDE_FROM_ALL)
+
+
+add_subdirectory(libs/tinyxml2 EXCLUDE_FROM_ALL)
+
+# Note: High five is included cause if the cmake file is used it will try to look
+#       for HDF5 but in the superbuild HDF5 is localised
+include_directories(libs/highfive/include)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libs/wxchartdir/include/)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libs/wxchartdir/wxdemo/common)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libs/boost/libs/numeric/ublas/include)
+
+add_executable(test_boost libs/highfive/tests/test_project/read_write_vector_dataset.cpp)
+target_link_libraries(test_boost ${Boost_LIBRARIES} Boost::thread Boost::signals2 Boost::crc Boost::serialization wx::core armadillo hdf5-static ${CMAKE_CURRENT_SOURCE_DIR}/libs/wxchartdir/lib/mac/libchartdir.7.dylib)
